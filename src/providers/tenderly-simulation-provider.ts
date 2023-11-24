@@ -1,6 +1,3 @@
-import http from 'http';
-import https from 'https';
-
 import { MaxUint256 } from '@ethersproject/constants';
 import { JsonRpcProvider } from '@ethersproject/providers';
 import { ChainId } from '@uniswap/sdk-core';
@@ -181,8 +178,6 @@ export class TenderlySimulator extends Simulator {
   private tenderlyServiceInstance = axios.create({
     // keep connections alive,
     // maxSockets default is Infinity, so Infinity is read as 50 sockets
-    httpAgent: new http.Agent({ keepAlive: true }),
-    httpsAgent: new https.Agent({ keepAlive: true }),
   });
 
   constructor(
