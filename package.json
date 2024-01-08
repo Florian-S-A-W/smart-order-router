@@ -1,5 +1,5 @@
 {
-  "name": "@florian-s-a-w/uniswap-smart-order-router",
+  "name": "@uniswapfoundation/smart-order-router",
   "version": "3.20.2",
   "description": "Uniswap Smart Order Router",
   "main": "build/main/index.js",
